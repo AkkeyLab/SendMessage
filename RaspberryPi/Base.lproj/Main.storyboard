@@ -41,7 +41,7 @@
                                             <rect key="frame" x="0.0" y="114" width="600" height="30"/>
                                             <animations/>
                                             <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <state key="normal" title="Submit">
+                                            <state key="normal" title="Submit to PHP">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
@@ -76,6 +76,61 @@
                                         <constraint firstItem="WjQ-O2-2km" firstAttribute="top" secondItem="Vua-mD-NiU" secondAttribute="bottom" constant="8" symbolic="YES" id="vcP-dO-JKy"/>
                                     </constraints>
                                 </view>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="QmE-z6-1E0">
+                                    <rect key="frame" x="0.0" y="144" width="600" height="144"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No submit!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KdK-lp-QY9">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="0Bx-jX-eWD"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GJG-E9-8yc">
+                                            <rect key="frame" x="0.0" y="38" width="600" height="30"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hiM-21-6eI">
+                                            <rect key="frame" x="0.0" y="76" width="600" height="30"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xlM-sh-nXP">
+                                            <rect key="frame" x="0.0" y="114" width="600" height="30"/>
+                                            <animations/>
+                                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <state key="normal" title="Submit to Rails">
+                                                <color key="titleColor" red="0.99215692280000001" green="0.99607849120000003" blue="0.99607849120000003" alpha="1" colorSpace="deviceRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="clickButtonR:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B3c-qK-fk2"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <animations/>
+                                    <color key="backgroundColor" red="0.73399822879999999" green="1" blue="0.96409971220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="xlM-sh-nXP" secondAttribute="trailing" id="5NA-Tx-nFK"/>
+                                        <constraint firstItem="KdK-lp-QY9" firstAttribute="leading" secondItem="GJG-E9-8yc" secondAttribute="leading" id="HKq-nK-qoz"/>
+                                        <constraint firstItem="hiM-21-6eI" firstAttribute="trailing" secondItem="GJG-E9-8yc" secondAttribute="trailing" id="Qfh-f0-YY9"/>
+                                        <constraint firstItem="GJG-E9-8yc" firstAttribute="top" secondItem="KdK-lp-QY9" secondAttribute="bottom" constant="8" symbolic="YES" id="Twi-Vr-MBF"/>
+                                        <constraint firstItem="GJG-E9-8yc" firstAttribute="trailing" secondItem="KdK-lp-QY9" secondAttribute="trailing" id="Ufp-z1-IOr"/>
+                                        <constraint firstItem="hiM-21-6eI" firstAttribute="top" secondItem="GJG-E9-8yc" secondAttribute="bottom" constant="8" symbolic="YES" id="bw3-Nb-PyW"/>
+                                        <constraint firstItem="KdK-lp-QY9" firstAttribute="top" secondItem="QmE-z6-1E0" secondAttribute="top" id="d0S-D7-twU"/>
+                                        <constraint firstItem="KdK-lp-QY9" firstAttribute="leading" secondItem="QmE-z6-1E0" secondAttribute="leading" id="dH1-Ej-IT1"/>
+                                        <constraint firstItem="xlM-sh-nXP" firstAttribute="top" secondItem="hiM-21-6eI" secondAttribute="bottom" constant="8" symbolic="YES" id="nyW-HF-jbp"/>
+                                        <constraint firstItem="xlM-sh-nXP" firstAttribute="leading" secondItem="hiM-21-6eI" secondAttribute="leading" id="rb9-QD-cmo"/>
+                                        <constraint firstItem="hiM-21-6eI" firstAttribute="leading" secondItem="GJG-E9-8yc" secondAttribute="leading" id="xG9-yH-4QR"/>
+                                        <constraint firstItem="hiM-21-6eI" firstAttribute="trailing" secondItem="xlM-sh-nXP" secondAttribute="trailing" id="xUg-ie-wJj"/>
+                                    </constraints>
+                                </view>
                             </tableView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pxF-cl-DQD">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
@@ -92,19 +147,22 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="4W1-gD-1Fk" firstAttribute="trailing" secondItem="pxF-cl-DQD" secondAttribute="trailing" id="4Jh-HD-Fta"/>
-                            <constraint firstItem="4W1-gD-1Fk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9mH-mh-F61"/>
-                            <constraint firstItem="4W1-gD-1Fk" firstAttribute="top" secondItem="pxF-cl-DQD" secondAttribute="bottom" id="Zqn-xY-thm"/>
-                            <constraint firstItem="4W1-gD-1Fk" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="eHv-KI-j3A"/>
-                            <constraint firstAttribute="trailing" secondItem="4W1-gD-1Fk" secondAttribute="trailing" id="ojf-WO-joP"/>
-                            <constraint firstItem="4W1-gD-1Fk" firstAttribute="leading" secondItem="pxF-cl-DQD" secondAttribute="leading" id="zdq-Vt-9WN"/>
-                            <constraint firstItem="pxF-cl-DQD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zyu-RA-Wz4"/>
+                            <constraint firstItem="pxF-cl-DQD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NbG-mt-Ne3"/>
+                            <constraint firstItem="4W1-gD-1Fk" firstAttribute="trailing" secondItem="pxF-cl-DQD" secondAttribute="trailing" id="T5j-wf-k5m"/>
+                            <constraint firstItem="4W1-gD-1Fk" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="YgV-57-S2P"/>
+                            <constraint firstItem="4W1-gD-1Fk" firstAttribute="top" secondItem="pxF-cl-DQD" secondAttribute="bottom" id="abV-gT-30X"/>
+                            <constraint firstItem="4W1-gD-1Fk" firstAttribute="leading" secondItem="pxF-cl-DQD" secondAttribute="leading" id="eGK-Uj-ZCg"/>
+                            <constraint firstItem="pxF-cl-DQD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="heV-ky-eyy"/>
+                            <constraint firstAttribute="trailing" secondItem="4W1-gD-1Fk" secondAttribute="trailing" id="igD-JS-qIl"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="inputText1" destination="Vua-mD-NiU" id="12J-ee-6CX"/>
                         <outlet property="inputText2" destination="WjQ-O2-2km" id="yky-rl-sFy"/>
+                        <outlet property="inputTextR1" destination="GJG-E9-8yc" id="Qka-lE-vij"/>
+                        <outlet property="inputTextR2" destination="hiM-21-6eI" id="PgE-GN-sxx"/>
                         <outlet property="resultLabel" destination="ui8-2I-OKx" id="R9L-dN-VJx"/>
+                        <outlet property="resultLabelR" destination="KdK-lp-QY9" id="C4e-xp-RcA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
