@@ -35,7 +35,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func clickButton(sender: AnyObject) {
+    @IBAction func clickButton(_ sender: AnyObject) {
         if inputText1.text != "" && inputText2.text != "" {
             let title = inputText1.text!
             let note  = inputText2.text!
@@ -45,18 +45,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
             let req = NSURLRequest(URL: url!)
             */
             let stringUrl = "http://192.168.1.21/RaspberryOne.php?title=\(title)&note=\(note)"
-            let url = NSURL(string: stringUrl.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!)!
-            let req = NSURLRequest(URL: url)
+            let url = URL(string: stringUrl.addingPercentEscapes(using: String.Encoding.utf8)!)!
+            let req = URLRequest(url: url)
             
-            let task = NSURLSession.sharedSession().dataTaskWithRequest(req, completionHandler: {
+            let task = URLSession.shared.dataTask(with: req, completionHandler: {
                 (data, res, err) in
                 if data != nil {
-                    let text = NSString(data: data!, encoding: NSUTF8StringEncoding)
-                    dispatch_async(dispatch_get_main_queue(), {
+                    let text = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+                    DispatchQueue.main.async(execute: {
                         self.resultLabel.text = text as String?
                     })
                 }else{
-                    dispatch_async(dispatch_get_main_queue(), {
+                    DispatchQueue.main.async(execute: {
                         self.resultLabel.text = "ERROR"
                     })
                 }
@@ -67,24 +67,24 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    @IBAction func clickButtonR(sender: AnyObject) {
+    @IBAction func clickButtonR(_ sender: AnyObject) {
         if inputTextR1.text != "" && inputTextR2.text != "" {
             let title = inputTextR1.text!
             let note  = inputTextR2.text!
             
             let stringUrl = "http://192.168.1.21:3000/?title=\(title)&note=\(note)"
-            let url = NSURL(string: stringUrl.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!)!
-            let req = NSURLRequest(URL: url)
+            let url = URL(string: stringUrl.addingPercentEscapes(using: String.Encoding.utf8)!)!
+            let req = URLRequest(url: url)
             
-            let task = NSURLSession.sharedSession().dataTaskWithRequest(req, completionHandler: {
+            let task = URLSession.shared.dataTask(with: req, completionHandler: {
                 (data, res, err) in
                 if data != nil {
-                    let text = NSString(data: data!, encoding: NSUTF8StringEncoding)
-                    dispatch_async(dispatch_get_main_queue(), {
+                    let text = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+                    DispatchQueue.main.async(execute: {
                         self.resultLabelR.text = text as String?
                     })
                 }else{
-                    dispatch_async(dispatch_get_main_queue(), {
+                    DispatchQueue.main.async(execute: {
                         self.resultLabelR.text = "ERROR"
                     })
                 }
@@ -95,20 +95,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    func alert(titleString: String, messageString: String, buttonString: String){
+    func alert(_ titleString: String, messageString: String, buttonString: String){
         //Create UIAlertController
-        let alert: UIAlertController = UIAlertController(title: titleString, message: messageString, preferredStyle: .Alert)
+        let alert: UIAlertController = UIAlertController(title: titleString, message: messageString, preferredStyle: .alert)
         //Create action
-        let action = UIAlertAction(title: buttonString, style: .Default) { action in
+        let action = UIAlertAction(title: buttonString, style: .default) { action in
             NSLog("\(titleString):Push button!")
         }
         //Add action
         alert.addAction(action)
         //Start
-        presentViewController(alert, animated: true, completion: nil)
+        present(alert, animated: true, completion: nil)
     }
 
-    func textFieldShouldReturn(textField: UITextField) -> Bool{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool{
         //Close keyboard.
         textField.resignFirstResponder()
         
