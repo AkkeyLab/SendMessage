@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		66C625B31C819EE200C7C0CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C625B21C819EE200C7C0CE /* AppDelegate.swift */; };
+		66C625B51C819EE200C7C0CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C625B41C819EE200C7C0CE /* ViewController.swift */; };
+		66C625B81C819EE200C7C0CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66C625B61C819EE200C7C0CE /* Main.storyboard */; };
+		66C625BB1C819EE200C7C0CE /* RaspberryPi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 66C625B91C819EE200C7C0CE /* RaspberryPi.xcdatamodeld */; };
+		66C625BD1C819EE200C7C0CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66C625BC1C819EE200C7C0CE /* Assets.xcassets */; };
+		66C625C01C819EE200C7C0CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66C625BE1C819EE200C7C0CE /* LaunchScreen.storyboard */; };
+		66C625CB1C819EE200C7C0CE /* RaspberryPiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C625CA1C819EE200C7C0CE /* RaspberryPiTests.swift */; };
+		66C625D61C819EE200C7C0CE /* RaspberryPiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C625D51C819EE200C7C0CE /* RaspberryPiUITests.swift */; };
+		66C625E51C81A08800C7C0CE /* Raspberry_Pi_Logo.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = 66C625E41C81A08800C7C0CE /* Raspberry_Pi_Logo.svg.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66C625C71C819EE200C7C0CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66C625A71C819EE200C7C0CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66C625AE1C819EE200C7C0CE;
+			remoteInfo = RaspberryPi;
+		};
+		66C625D21C819EE200C7C0CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66C625A71C819EE200C7C0CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66C625AE1C819EE200C7C0CE;
+			remoteInfo = RaspberryPi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		66C625AF1C819EE200C7C0CE /* RaspberryPi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaspberryPi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66C625B21C819EE200C7C0CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		66C625B41C819EE200C7C0CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		66C625B71C819EE200C7C0CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		66C625BA1C819EE200C7C0CE /* RaspberryPi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RaspberryPi.xcdatamodel; sourceTree = "<group>"; };
+		66C625BC1C819EE200C7C0CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66C625BF1C819EE200C7C0CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		66C625C11C819EE200C7C0CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66C625C61C819EE200C7C0CE /* RaspberryPiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaspberryPiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66C625CA1C819EE200C7C0CE /* RaspberryPiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaspberryPiTests.swift; sourceTree = "<group>"; };
+		66C625CC1C819EE200C7C0CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66C625D11C819EE200C7C0CE /* RaspberryPiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaspberryPiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66C625D51C819EE200C7C0CE /* RaspberryPiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaspberryPiUITests.swift; sourceTree = "<group>"; };
+		66C625D71C819EE200C7C0CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66C625E41C81A08800C7C0CE /* Raspberry_Pi_Logo.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Raspberry_Pi_Logo.svg.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66C625AC1C819EE200C7C0CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66C625C31C819EE200C7C0CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66C625CE1C819EE200C7C0CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66C625A61C819EE200C7C0CE = {
+			isa = PBXGroup;
+			children = (
+				66C625B11C819EE200C7C0CE /* RaspberryPi */,
+				66C625C91C819EE200C7C0CE /* RaspberryPiTests */,
+				66C625D41C819EE200C7C0CE /* RaspberryPiUITests */,
+				66C625B01C819EE200C7C0CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		66C625B01C819EE200C7C0CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66C625AF1C819EE200C7C0CE /* RaspberryPi.app */,
+				66C625C61C819EE200C7C0CE /* RaspberryPiTests.xctest */,
+				66C625D11C819EE200C7C0CE /* RaspberryPiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66C625B11C819EE200C7C0CE /* RaspberryPi */ = {
+			isa = PBXGroup;
+			children = (
+				66C625E31C81A07A00C7C0CE /* image */,
+				66C625B21C819EE200C7C0CE /* AppDelegate.swift */,
+				66C625B41C819EE200C7C0CE /* ViewController.swift */,
+				66C625B61C819EE200C7C0CE /* Main.storyboard */,
+				66C625BC1C819EE200C7C0CE /* Assets.xcassets */,
+				66C625BE1C819EE200C7C0CE /* LaunchScreen.storyboard */,
+				66C625C11C819EE200C7C0CE /* Info.plist */,
+				66C625B91C819EE200C7C0CE /* RaspberryPi.xcdatamodeld */,
+			);
+			path = RaspberryPi;
+			sourceTree = "<group>";
+		};
+		66C625C91C819EE200C7C0CE /* RaspberryPiTests */ = {
+			isa = PBXGroup;
+			children = (
+				66C625CA1C819EE200C7C0CE /* RaspberryPiTests.swift */,
+				66C625CC1C819EE200C7C0CE /* Info.plist */,
+			);
+			path = RaspberryPiTests;
+			sourceTree = "<group>";
+		};
+		66C625D41C819EE200C7C0CE /* RaspberryPiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				66C625D51C819EE200C7C0CE /* RaspberryPiUITests.swift */,
+				66C625D71C819EE200C7C0CE /* Info.plist */,
+			);
+			path = RaspberryPiUITests;
+			sourceTree = "<group>";
+		};
+		66C625E31C81A07A00C7C0CE /* image */ = {
+			isa = PBXGroup;
+			children = (
+				66C625E41C81A08800C7C0CE /* Raspberry_Pi_Logo.svg.png */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66C625AE1C819EE200C7C0CE /* RaspberryPi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66C625DA1C819EE200C7C0CE /* Build configuration list for PBXNativeTarget "RaspberryPi" */;
+			buildPhases = (
+				66C625AB1C819EE200C7C0CE /* Sources */,
+				66C625AC1C819EE200C7C0CE /* Frameworks */,
+				66C625AD1C819EE200C7C0CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RaspberryPi;
+			productName = RaspberryPi;
+			productReference = 66C625AF1C819EE200C7C0CE /* RaspberryPi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		66C625C51C819EE200C7C0CE /* RaspberryPiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66C625DD1C819EE200C7C0CE /* Build configuration list for PBXNativeTarget "RaspberryPiTests" */;
+			buildPhases = (
+				66C625C21C819EE200C7C0CE /* Sources */,
+				66C625C31C819EE200C7C0CE /* Frameworks */,
+				66C625C41C819EE200C7C0CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66C625C81C819EE200C7C0CE /* PBXTargetDependency */,
+			);
+			name = RaspberryPiTests;
+			productName = RaspberryPiTests;
+			productReference = 66C625C61C819EE200C7C0CE /* RaspberryPiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		66C625D01C819EE200C7C0CE /* RaspberryPiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66C625E01C819EE200C7C0CE /* Build configuration list for PBXNativeTarget "RaspberryPiUITests" */;
+			buildPhases = (
+				66C625CD1C819EE200C7C0CE /* Sources */,
+				66C625CE1C819EE200C7C0CE /* Frameworks */,
+				66C625CF1C819EE200C7C0CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66C625D31C819EE200C7C0CE /* PBXTargetDependency */,
+			);
+			name = RaspberryPiUITests;
+			productName = RaspberryPiUITests;
+			productReference = 66C625D11C819EE200C7C0CE /* RaspberryPiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66C625A71C819EE200C7C0CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = AkkeyLab;
+				TargetAttributes = {
+					66C625AE1C819EE200C7C0CE = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = Y6Y8U7YGDU;
+					};
+					66C625C51C819EE200C7C0CE = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 66C625AE1C819EE200C7C0CE;
+					};
+					66C625D01C819EE200C7C0CE = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 66C625AE1C819EE200C7C0CE;
+					};
+				};
+			};
+			buildConfigurationList = 66C625AA1C819EE200C7C0CE /* Build configuration list for PBXProject "RaspberryPi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66C625A61C819EE200C7C0CE;
+			productRefGroup = 66C625B01C819EE200C7C0CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66C625AE1C819EE200C7C0CE /* RaspberryPi */,
+				66C625C51C819EE200C7C0CE /* RaspberryPiTests */,
+				66C625D01C819EE200C7C0CE /* RaspberryPiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66C625AD1C819EE200C7C0CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66C625E51C81A08800C7C0CE /* Raspberry_Pi_Logo.svg.png in Resources */,
+				66C625C01C819EE200C7C0CE /* LaunchScreen.storyboard in Resources */,
+				66C625BD1C819EE200C7C0CE /* Assets.xcassets in Resources */,
+				66C625B81C819EE200C7C0CE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66C625C41C819EE200C7C0CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66C625CF1C819EE200C7C0CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66C625AB1C819EE200C7C0CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66C625B51C819EE200C7C0CE /* ViewController.swift in Sources */,
+				66C625BB1C819EE200C7C0CE /* RaspberryPi.xcdatamodeld in Sources */,
+				66C625B31C819EE200C7C0CE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66C625C21C819EE200C7C0CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66C625CB1C819EE200C7C0CE /* RaspberryPiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66C625CD1C819EE200C7C0CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66C625D61C819EE200C7C0CE /* RaspberryPiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66C625C81C819EE200C7C0CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66C625AE1C819EE200C7C0CE /* RaspberryPi */;
+			targetProxy = 66C625C71C819EE200C7C0CE /* PBXContainerItemProxy */;
+		};
+		66C625D31C819EE200C7C0CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66C625AE1C819EE200C7C0CE /* RaspberryPi */;
+			targetProxy = 66C625D21C819EE200C7C0CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		66C625B61C819EE200C7C0CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66C625B71C819EE200C7C0CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		66C625BE1C819EE200C7C0CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66C625BF1C819EE200C7C0CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66C625D81C819EE200C7C0CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		66C625D91C819EE200C7C0CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66C625DB1C819EE200C7C0CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = RaspberryPi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.akkeylab.RaspberryPi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		66C625DC1C819EE200C7C0CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = RaspberryPi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.akkeylab.RaspberryPi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		66C625DE1C819EE200C7C0CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RaspberryPiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.akkeylab.RaspberryPiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RaspberryPi.app/RaspberryPi";
+			};
+			name = Debug;
+		};
+		66C625DF1C819EE200C7C0CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RaspberryPiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.akkeylab.RaspberryPiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RaspberryPi.app/RaspberryPi";
+			};
+			name = Release;
+		};
+		66C625E11C819EE200C7C0CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RaspberryPiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.akkeylab.RaspberryPiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RaspberryPi;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		66C625E21C819EE200C7C0CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RaspberryPiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.akkeylab.RaspberryPiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RaspberryPi;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66C625AA1C819EE200C7C0CE /* Build configuration list for PBXProject "RaspberryPi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66C625D81C819EE200C7C0CE /* Debug */,
+				66C625D91C819EE200C7C0CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66C625DA1C819EE200C7C0CE /* Build configuration list for PBXNativeTarget "RaspberryPi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66C625DB1C819EE200C7C0CE /* Debug */,
+				66C625DC1C819EE200C7C0CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		66C625DD1C819EE200C7C0CE /* Build configuration list for PBXNativeTarget "RaspberryPiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66C625DE1C819EE200C7C0CE /* Debug */,
+				66C625DF1C819EE200C7C0CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		66C625E01C819EE200C7C0CE /* Build configuration list for PBXNativeTarget "RaspberryPiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66C625E11C819EE200C7C0CE /* Debug */,
+				66C625E21C819EE200C7C0CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		66C625B91C819EE200C7C0CE /* RaspberryPi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				66C625BA1C819EE200C7C0CE /* RaspberryPi.xcdatamodel */,
+			);
+			currentVersion = 66C625BA1C819EE200C7C0CE /* RaspberryPi.xcdatamodel */;
+			path = RaspberryPi.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 66C625A71C819EE200C7C0CE /* Project object */;
+}
