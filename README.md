@@ -11,5 +11,5 @@ Send text message app.
 ?>
 ```
 
-- Edit IP address
+- Edit IP address  
 `192.168.2.22` -> My address
